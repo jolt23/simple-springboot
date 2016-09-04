@@ -27,4 +27,20 @@ targetCompatibility = 1.8
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+}
+
+test {
+    // Exclude all test that end with IntegrationTest
+    exclude '**/*IntegrationTest*'
+
+    // Set logging to display when a test has passed or failed
+    // Failed tests will display full stack trace and information
+    testLogging {
+        events 'passed', 'skipped', 'standard_out', 'standard_error'
+        exceptionFormat 'full'
+        displayGranularity -1
+        showStackTraces true
+    }
 }
