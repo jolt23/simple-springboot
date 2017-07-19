@@ -7,9 +7,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
-/**
- * Created by joel.
- */
 @RunWith(MockitoJUnitRunner.class)
 public class GreetingControllerTest {
 

@@ -1,8 +1,5 @@
 package com.jdev.simple_springboot.model;
 
-/**
- * Created by joel.
- */
 public class GreetingResponse {
 
     private final long id;

@@ -2,9 +2,6 @@ package com.jdev.simple_springboot.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-/**
- * Created by joel.
- */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GreetingTestResponse {
 
